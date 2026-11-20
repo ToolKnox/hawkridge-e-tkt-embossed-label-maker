@@ -1,0 +1,493 @@
+<!-- MIT License
+
+// Copyright (c) 2022 Andrei Speridião
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+//
+// for more information, please visit https://github.com/andreisperid/E-TKT
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- andrei speridiao - 2022 - andrei.cc -->
+    <meta charset="utf-8" />
+    <title>E-TKT</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="image" href="./splash.png" />
+    <link rel="preload" href="./fontwhite.ttf" as="font" crossorigin />
+    <link rel="icon" href="./icon.png" />
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=0" />
+    <meta name="theme-color" content="#0b111a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  </head>
+  <body>
+    <div id="splash">
+      <div id="splashlogo">
+        <div id="splashbar"></div>
+      </div>
+    </div>
+
+    <div
+      style="
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column; /* justify-content: space-between; */
+      "
+    >
+      <div id="background"></div>
+
+      <div style="display: box; width: 350px; margin-right: auto; margin-left: auto" id="frame">
+        <form action="none" method="post" autocomplete="off" novalidate onsubmit="return false">
+          <!-------------------->
+          <!---- main frame ---->
+          <!-------------------->
+          <div
+            id="main-frame"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: absolute;
+              top: 20px;
+              width: 350px;
+              height: 485px;
+              margin-right: auto;
+              margin-left: auto;
+              /* background-color: green; */
+            "
+          >
+            <div>
+              <div style="transform: rotate(-2deg)">
+                <h1 style="text-align: center">E-TKT</h1>
+              </div>
+              <div style="margin-top: 2px">
+                <h2 style="text-align: center">label maker</h2>
+              </div>
+            </div>
+
+            <div id="single-column" style="margin-top: 40px; position: relative">
+              <div id="tips">
+                <div id="tip-left" class="tip-child" onclick="jumpToScrollEnds(0)">...</div>
+                <div id="tip-right" class="tip-child" onclick="jumpToScrollEnds(1)">...</div>
+              </div>
+
+              <div id="text-form-border">
+                <div id="text-form-scroll" onscroll="updateScrollHelper()">
+                  <div id="progress-bar-container">
+                    <input
+                      type="search" 
+                      enterkeyhint="send"
+                      id="text-input"
+                      name="LABEL\"
+                      maxlength="247"
+                      placeholder="WRITE HERE"
+                      oninput="labelTextChanged()"
+                      onchange="labelTextChanged()"
+                      onkeydown="labelTextKeyDown(event)"
+                      onkeydown="onTextInputSelectionchange()"
+                      onselect="onTextInputSelectionchange()"
+                      onfocus="onTextInputSelectionchange()"
+                      value=""
+                      autocomplete="off"
+                      autocorrect="off"
+                      spellcheck="false"
+                      tabindex="-1"
+                    />
+                    <div id="printing-label"></div>
+                    <div id="progress-bar"></div>
+                  </div>
+                  <div class="overlay-gutter"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="single-column" style="margin: 12px 0 5px 0; justify-content: center">
+              <div id="hint">A-Z 0-9 space . -</div>
+            </div>
+
+            <div id="single-column" style="margin: 5px 0 15px 0; height: 40px">
+              <div
+                id="emoji-buttons"
+                style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; margin: auto"
+              >
+                <div>
+                  <input type="button" id="emoji-button" value="♡" tabindex="-1" onclick="insertIntoField('♡')" />
+                </div>
+                <div>
+                  <input type="button" id="emoji-button" value="☆" tabindex="-1" onclick="insertIntoField('☆')" />
+                </div>
+                <div>
+                  <input type="button" id="emoji-button" value="♪" tabindex="-1" onclick="insertIntoField('♪')" />
+                </div>
+                <div>
+                  <input
+                    style="font-size: 24px"
+                    type="button"
+                    id="emoji-button"
+                    value="$"
+                    tabindex="-1"
+                    onclick="insertIntoField('$')"
+                  />
+                </div>
+                <div>
+                  <input
+                    style="font-size: 24px"
+                    type="button"
+                    id="emoji-button"
+                    value="@"
+                    tabindex="-1"
+                    onclick="insertIntoField('@')"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="single-column" style="margin-top: 0px; padding-top: 0px; height: 40px">
+              <div style="width: 68px">
+                <input type="button" id="clear-button" onclick="clearField()" value=" c " disabled tabindex="-1" />
+              </div>
+
+              <div style="width: 50%">
+                <select type="range" id="mode-dropdown" onchange="marginDropdownChanged(event)">
+                  <option value="tight">no margin</option>
+                  <option value="margin" selected>1x margin</option>
+                  <!-- <option value="full">2x margin</option> -->
+                </select>
+              </div>
+
+              <div
+                id="length-label"
+                style="
+                  line-height: 37px;
+                  height: 37px;
+                  border-width: 1.5px 0 1.5px 0;
+                  border-style: solid;
+                  border-color: orange;
+                  color: orange;
+                  margin: 0;
+                  width: 68px;
+                  text-align: center;
+                  opacity: 0.2;
+                "
+              >
+                <div style="color: orange">??mm</div>
+              </div>
+            </div>
+
+            <div id="single-column" style="margin-top: 10px; padding-top: 0">
+              <div style="width: 100%; height: 40px">
+                <input
+                  type="button"
+                  onclick="labelCommand()"
+                  id="submit-button"
+                  value=" ... "
+                  style="height: 100%"
+                  disabled
+                  tabindex="-1"
+                />
+              </div>
+            </div>
+
+            <!-- extras section -->
+
+            <div id="single-column" style="margin: 0px; padding: 0px; padding-top: 15px">
+              <div>
+                <input
+                  type="button"
+                  id="setup-button"
+                  onclick="toggleSettings()"
+                  value=" SETUP "
+                  tabindex="-1"
+                  style="padding: 4px; width: 100px"
+                />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  id="cut-button"
+                  style="width: 100px"
+                  onclick="cutCommand()"
+                  value=" CUT "
+                  tabindex="-1"
+                />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  id="feed-button"
+                  style="width: 100px"
+                  onclick="feedCommand()"
+                  value=" FEED "
+                  tabindex="-1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-------------------->
+          <!-- settings modal -->
+          <!-------------------->
+          <div
+            style="
+              visibility: hidden;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: absolute;
+              top: 30px;
+              width: 350px;
+              height: 475px;
+              margin-right: auto;
+              margin-left: auto;
+              z-index: 999;
+              /* background-color: red; */
+            "
+            id="settings-frame"
+          >
+            <div
+              id="single-column"
+              style="
+                filter: drop-shadow(0px 0px 40px rgba(174, 219, 255, 64));
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                height: 200px;
+                width: 100%;
+                background-image: url('iso.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0.75;
+              "
+            >
+              <div style="opacity: 0.35">v1.0</div>
+            </div>
+            <div
+              id="single-column"
+              style="display: flex; margin: auto; justify-content: space-between; padding: 0px; margin-top: 15px"
+            >
+              <div>
+                <h1 style="font-size: 36px; margin: 0px; transform: rotate(-2deg)">SETUP</h1>
+              </div>
+              <div>
+                <input type="button" id="reel-button" onclick="reelCommand()" value=" +REEL " tabindex="-1" />
+              </div>
+            </div>
+            <div
+              id="single-column"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-content: flex-end;
+                justify-content: space-around;
+                margin: auto;
+                padding-bottom: 0px;
+              "
+            ></div>
+
+            <div
+              id="single-column"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-content: flex-end;
+                justify-content: space-around;
+                margin: auto;
+                margin-top: 20px;
+                padding-bottom: 0px;
+              "
+            >
+              <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center">
+                <div style="margin-right: 10px; margin-top: 7px; font-size: 25px" class="align">align</div>
+                <div style="margin-right: 10px; margin-bottom: 9px; font-size: 25px" class="force">force</div>
+              </div>
+
+              <div>
+                <div
+                  style="display: flex; flex-direction: row; justify-content: center; align-items: center"
+                  id="align-div"
+                >
+                  <div>
+                    <input
+                      type="button"
+                      id="remove-align-button"
+                      class="align"
+                      onclick="changeField('remove', 'align-field')"
+                      value="<"
+                      tabindex="-1"
+                      style="width: 40px; margin: 0 5px"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="align-field"
+                      name="align-field"
+                      min="1"
+                      max="9"
+                      value=""
+                      style="text-align: center; width: 30px; border: 0px; font-size: 30px"
+                      disabled
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="button"
+                      id="add-align-button"
+                      class="align"
+                      onclick="changeField('add', 'align-field')"
+                      value=">"
+                      tabindex="-1"
+                      style="width: 40px; margin: 0 5px"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 15px;
+                  "
+                  id="force-div"
+                >
+                  <div>
+                    <input
+                      type="button"
+                      id="remove-force-button"
+                      class="force"
+                      onclick="changeField('remove', 'force-field')"
+                      value="-"
+                      tabindex="-1"
+                      style="width: 40px; margin: 0 5px"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="force-field"
+                      name="force-field"
+                      min="1"
+                      max="9"
+                      value=""
+                      style="text-align: center; width: 30px; border: 0px; font-size: 30px"
+                      disabled
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="button"
+                      id="add-force-button"
+                      class="force"
+                      onclick="changeField('add', 'force-field')"
+                      value="+"
+                      tabindex="-1"
+                      style="width: 40px; margin: 0 5px"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  margin-left: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  position: relative;
+                "
+              >
+                <button
+                  type="button"
+                  id="test-full-button"
+                  onclick="testFullCommand()"
+                  value="test"
+                  tabindex="-1"
+                  style="width: 75px; height: 100%; position: relative; bottom: 0px; border-radius: 21px"
+                >
+                  <br /><br />test
+                </button>
+                <input
+                  type="button"
+                  id="test-align-button"
+                  onclick="testAlignCommand()"
+                  value="test"
+                  tabindex="-1"
+                  style="width: 65px; height: 32px; position: absolute; top: 5px"
+                />
+              </div>
+            </div>
+
+            <div
+              id="single-column"
+              style="display: flex; justify-content: space-between; margin: 0px; padding-bottom: 0px; padding-top: 30px"
+            >
+              <div style="width: 45%">
+                <input type="button" id="cancel-button" value="cancel" onclick="toggleSettings()" tabindex="-1" />
+              </div>
+              <div style="width: 45%">
+                <input type="button" id="save-button" value="save" onclick="settingsCommand()" tabindex="-1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- refresh modal -->
+          <div
+            style="
+              visibility: hidden;
+              display: flex;
+              flex-direction: column;
+              /* justify-content: center; */
+              align-items: center;
+              position: absolute;
+              top: 250px;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              margin: auto;
+              padding: 20px;
+              z-index: 999;
+            "
+            id="refresh-frame"
+          >
+            <div style="margin-bottom: 10px">REBOOTING...</div>
+            <div id="countdown">15</div>
+          </div>
+        </form>
+      </div>
+
+      <div style="position: absolute; top: 525px; left: 0; right: 0">
+        <h3 style="opacity: 0.5">
+          <a href="http://andrei.cc" target="blank">andrei speridião - 2022</a>
+        </h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

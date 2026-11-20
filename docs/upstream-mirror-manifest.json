@@ -1,0 +1,1535 @@
+{
+ "kind": "github",
+ "subdir": "",
+ "repo": "https://github.com/andreisperid/E-TKT",
+ "commit": "d63a636e16f25aaf3568ad580cc7558c940871c9",
+ "tree": "d98f58999a68b6eacb1375738eeb31afb3a46869",
+ "commit_date": "2023-05-04T18:05:01Z",
+ "files": [
+  {
+   "path": ".clang-format",
+   "bytes": 21,
+   "git_blob_sha": "f6cb8ad931f5442a5e2276ed66ba7b5a733b82c6",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "51977317b1771c3789febc994d1072092996de145e0f588a9ed6fe8deac2cbea"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 203,
+   "git_blob_sha": "837eecdb1ebaaea2fd8a6c766ae422d0ab3e2e6d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0761f20aaeb6fb11f9aafc11db23fad7417b99f7ec4043881983db32de8db699"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1074,
+   "git_blob_sha": "bce13f77561603f0b1a7fa7bbeae65e009e58b4f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "8fdef9d86bfba9b09bed10590206d29035971ddcb43afaa7a333a71939e1e775"
+  },
+  {
+   "path": "LabelMaker.code-workspace",
+   "bytes": 365,
+   "git_blob_sha": "da36fae906f27b43e8d48d77280ec90f031a0d5c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "8ac7c297385a810a7e1ae066488fcfffbdc4798c5972790b27c000a48037eb64"
+  },
+  {
+   "path": "README.md",
+   "bytes": 4006,
+   "git_blob_sha": "47b66f4bc02f8a0c5834a012a3fa28b2b6ec2c0c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2648676ca39d3bd8f13a70215bfa995755befa294e673d2d11b2208027c5fd1b"
+  },
+  {
+   "path": "_3dprint/customPressWheels/STL/pressWheel_42_ABC123_test.stl",
+   "bytes": 1077584,
+   "git_blob_sha": "2c3dc196f79c92c624976685bec2b7a5cce4bb10",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a6280fdb56c457c645097c0d8306369974d5782f33b0271def6fd9c446b933b2"
+  },
+  {
+   "path": "_3dprint/customPressWheels/STL/pressWheel_42_ABC123_test_Top.stl",
+   "bytes": 1552684,
+   "git_blob_sha": "9d868dd1989d804c6a5fd5465f13e34341139e5c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "113484fd0b2f9a408e3d6169213537d954827515cc1ff177a869e7fe0fac6974"
+  },
+  {
+   "path": "_3dprint/customPressWheels/source/pressWheel.scad",
+   "bytes": 10897,
+   "git_blob_sha": "5b1753508057ba14494d91d7622718105682b5d0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "835e5601d79b9c1374a06719181a05af04a1865d85c06bba6163cd5baf1fd8de"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_LED_DIP-2x5x7mm.stp",
+   "bytes": 14582,
+   "git_blob_sha": "2c8188adc53aae6abcab8c2a9cb44b1412f5aa88",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e2befe48d819386fd17775d035b07cf67d7de61380a0e1934676b721bea230b6"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_PCB.stp",
+   "bytes": 13142147,
+   "git_blob_sha": "f35fb7b3d6a0a9abc4f8618819de27f7675612f9",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "3fd783bf96f7a5b8c75c3ffe84dadde96014952b5eaa5b8883e0099214916f11"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_hall_sensor_KY-003.stp",
+   "bytes": 27893,
+   "git_blob_sha": "746f6e3f6017bb1ef1ef4a2e21095369d0753735",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "af86265530ece4a0591d9ddc69f427f0fb09a7f40fc3ce1fc98238d0e3a82489"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_stepper_NEMA-17HS4023.stp",
+   "bytes": 77295,
+   "git_blob_sha": "da538aadbc4faf0f174e41feaaab631c1499d724",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e94446300919976b5113dcbe6227f5169a84ed3460f08f0886eb320689e1e859"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-logo_E-TKT.stp",
+   "bytes": 1157907,
+   "git_blob_sha": "f13043a629f49f7d5c02e0143c8fe081301e404a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "03b49972b2ec93cbaa4a6fe34d851e41ef45295345cf9daaed8aab03aaaac834"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_bearing_608-2Z.stp",
+   "bytes": 52609,
+   "git_blob_sha": "bec7f814e7301bbd49bb4e82bdc1b3d1a2fa51de",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "556064a02389bb2b312035b9da1fbd9134c540163d7213682a583de56a288ad8"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_bearing_623-2Z.stp",
+   "bytes": 24616,
+   "git_blob_sha": "ba8ea525e6ea0343644c0befc3e075415cf0278d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "df5ce26e148ff4baf97bd3fbcb5baca3ad08c4d313ba834f7fc519a1f57f6714"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_daisywheel_MOTEX-43chars.stp",
+   "bytes": 1525700,
+   "git_blob_sha": "9d1e7e4f0c83a933bce62e8c5ad5b1500dd0e722",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a3afd9545a8156997118c70695291f8bfdc3fc57185af9b4d1c37f377d952e74"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_extruder_gear_MK8-40-teeth-5mm-axis.stp",
+   "bytes": 278630,
+   "git_blob_sha": "1bb0f48ef4fbd07af077d946e3dde573b67ae200",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "235c6df14f83f5e9ca4335cb1fb009d77d7839084fe58b63eda221651881ca1f"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3.stp",
+   "bytes": 3688,
+   "git_blob_sha": "4e4398e68c3f3676d0741aa4968e070f5ec2b96f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "836116b930e34e22f56611f0b98d74a474f96f37083442a4cc216f413161d4b8"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_hex_nut_DIN-EN-ISO4032-M3.stp",
+   "bytes": 157301,
+   "git_blob_sha": "26731ac929040c957bbd5cec1494f9789e5d580e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "69d943cf5045554765c47a0baf36d929ccad8dd34355243e232009f031864eb8"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_screw_ISO4762-M3x10.stp",
+   "bytes": 104929,
+   "git_blob_sha": "f3056c86ea220c33e50bdf98edbb65868f5da638",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "c2fc24e67052e46ce6cdb88dfdb675b65e14cbc4d5b109d0ae4cd5c3669f30de"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_screw_ISO4762-M3x16.stp",
+   "bytes": 188392,
+   "git_blob_sha": "061c66fbefa5ada23cdf3820c46e4e32ab6d7e83",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "06813d71b229ab81db66ec2e748bf673f1984ba7d2b4deffe39b1c94163fa8fc"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_screw_ISO4762-M3x20.stp",
+   "bytes": 522894,
+   "git_blob_sha": "d84143dadc4e4a29a2558eaf7f39fe103b8afabc",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b16d73a6ae9f098e9151e763c315b7299e6615688d3df2458ea5c73f4dd06af4"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_screw_ISO4762-M3x40.stp",
+   "bytes": 28864,
+   "git_blob_sha": "276635df1fcc987f08c6fc12b789fe472e6c6926",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ff4e492e8c9c19841438639bbf72b1da798092daf80f96939236f38bd26e95c8"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_screw_ISO4762-M3x6.stp",
+   "bytes": 229952,
+   "git_blob_sha": "3c4c2118fcf773de48012f32bbf836063e21323a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "bad797347a5696bc0ac31fa1d85fc23f7433a272b4589aa9e2fba36853a1e65a"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m3_screw_ISO4762-M3x8.stp",
+   "bytes": 56016,
+   "git_blob_sha": "ed84e306c60e682bd267779e06efb1f9e8320f6f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "af55b47aa05d5ed51f95c823c52cb6d8a039752a261abc7fc2fe8df778e77b8d"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m4_screw_ISO4762-M4x10.stp",
+   "bytes": 31316,
+   "git_blob_sha": "8e3f526c5434b38fe186284bae5b910f2603966c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "88d841b2bb18a0fdf2b32026363cb7fff80039cab20a94874feb6b6867a10532"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-mechanic_m6_washer_DIN-EN-ISO7090-6.stp",
+   "bytes": 13064,
+   "git_blob_sha": "5bb6bd251275d313f332a2f0e615a35c52314667",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2b01a38e2413ddd1d350709e93ee19f6a077b8e820306ea3daee5c8a9f980bc3"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_A_bottom.stp",
+   "bytes": 486995,
+   "git_blob_sha": "9e716a63517d4201259d9b4ab1599cec214b6e1d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "63a95b57a827731ea1f3b7f7505d2b27bcf30e91a9b15da444af6e2f143f87aa"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_B_wall.stp",
+   "bytes": 190002,
+   "git_blob_sha": "42da9b2160c9bee6b143c2fed487946f3e0a5888",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "6c30cd966c277956766ad64052e2d8bac8219d0fcc793c705525a5ae9b0ad9eb"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_C_wall_track.stp",
+   "bytes": 215386,
+   "git_blob_sha": "b67115d1ff4590090ed8a3a98f2efa7daf04b037",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a937e977ae6859227f2795e29eb6c0ea745e5e40943352b6589f831f60fe90ff"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_D_pillar.stp",
+   "bytes": 63301,
+   "git_blob_sha": "230a8924f96c44610a55bfe4cdb1bc7ddea045fd",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "17e58fd867c4bffa23f38e13944fe369b816092f0e06319a0db478e488420f0c"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_E_pillar.stp",
+   "bytes": 65420,
+   "git_blob_sha": "80f8e684f46beac22df6e1777a61af6441321606",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "24136e2e6f6933af9b037e0ebe814a917feee58dece216a94b228a686db0311c"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_F_pillar.stp",
+   "bytes": 196870,
+   "git_blob_sha": "5d8c4ce96f46a86d63faa70f18ca2876b087b2e5",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e6484c92185843542669028960e068a67166d4d014f496c30fee05ff9ceb2ec5"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_G_pillar.stp",
+   "bytes": 136418,
+   "git_blob_sha": "17ead5df1909ffa79fcdc6706d5233f8e814c38f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "34d55be0b330f321d2fcab9623b1954ea90000012283d6f0bc24d25ccca79e02"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_H_nema_cover.stp",
+   "bytes": 77685,
+   "git_blob_sha": "fea35da68141eaf963c92642bccccbb767823fe1",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "deddf356e47fed183b5c2e0084f575b1eea6a3dd43e2f2fbffd5ab64ff786c7e"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_I_nema_wheel_hub.stp",
+   "bytes": 136769,
+   "git_blob_sha": "13d40c0f170c15cb5d0632e14262d0919ada29d5",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "33f504c4661661b751310958134976c80eb1b870d649b2e527b7f2330dd4b25d"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_J_top.stp",
+   "bytes": 1174985,
+   "git_blob_sha": "b3389b0bc2f596b5e7cb31f07d9c03bfec71fd61",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "6a170f6186f63183aeb25d29dd465fdcf670bbce5abf9e994a35120a3e5249c4"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_K_top_screenholder.stp",
+   "bytes": 79225,
+   "git_blob_sha": "d0bd4afa427cf3291564b8c850fe3ebb7b077239",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b5ba68bb55aedb2dd9814e991bc409309f96665aa348de3ead2c97cb54d2a060"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_L_top_tapefeeder.stp",
+   "bytes": 341112,
+   "git_blob_sha": "ff67d362ae277cc09877ae696c3ac6f21a98d7e3",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "9416a2702d9a44d5e0093e110deaa05e4b95e136d240b9c9aa07f8cc7a1ba0da"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_M_top_wheel_cover.stp",
+   "bytes": 137804,
+   "git_blob_sha": "f182b40c0d13249847e79b74a886d4f65d7b8afe",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2a5ef396bc56ccbff3786300e35e237c9eadf05a28dd75a32370fd27e1c4cd40"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_N_wheel_coupling_bottom.stp",
+   "bytes": 21548,
+   "git_blob_sha": "11b24014ef4dfe50acd54ff6e37dde2392a83f2e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "773ac9f3c4fe06c7e3fb70d082e33b939a147c1a1dcd762ff04c9a1dab2b6eea"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_O_wheel_coupling_top.stp",
+   "bytes": 21861,
+   "git_blob_sha": "b7ddf5c9ae215c464ae34c56364944b516685e24",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "16fd2a1f615cdc9271de57d8b415f8d8a49c2c09305fee265fbd79f7fd097e5d"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_P_press.stp",
+   "bytes": 125736,
+   "git_blob_sha": "5354fc6a3cbc1a3dfdf35d5492d64999d96dc88b",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "401f781abdbc4230d161b8b95157c9050348968cc1289d91cac8f73a7ed0250f"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-structure_P_press_1mmleft.stp",
+   "bytes": 119605,
+   "git_blob_sha": "7e2c4c89d6c8e970a8a9c56f5a10cd3b1bfb9923",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "4dddb49010d17d8845e8103a9788ed3945c89c15c37e8ceb2fffe2357fb58e0e"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-tape_9mm.stp",
+   "bytes": 29560,
+   "git_blob_sha": "b89d3831a1b3074d7bbcda005eca6c3b0a67cfc2",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f8fb7fca449a95bef98704bf1f9a5c046c6212d1d09376911cf40832bd775724"
+  },
+  {
+   "path": "_3dprint/stl/A_bottom.stl",
+   "bytes": 10024084,
+   "git_blob_sha": "e36bc408c8d4cb6fd604882740cf2402eb1def6e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "7123374509e0494c88ed826df38fde5022e51649427c1184764ed3ab02460f90"
+  },
+  {
+   "path": "_3dprint/stl/B_wall.stl",
+   "bytes": 4569284,
+   "git_blob_sha": "84195de19ea330aedaaa1facc0501626c92782b9",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "9faeff96526d6bf7ca24caebf93f7af474d2b706660c7d01084bbbb6614439c6"
+  },
+  {
+   "path": "_3dprint/stl/C_wall_track.stl",
+   "bytes": 1474084,
+   "git_blob_sha": "aeeda7893baf3269e92e5c23b155ba5be79a4133",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "7ecbf8d5ea2cc4f4bc1ae1708869a56eb7800bac722c374eea121bded78c4421"
+  },
+  {
+   "path": "_3dprint/stl/D_pillar.stl",
+   "bytes": 1862384,
+   "git_blob_sha": "6a31e7cdd43640e960dcf23b253bcabd286f0c82",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "fa6417a33d31f7f55936a76f6211ea0d9886124eb123c85a53c59264f26a17b1"
+  },
+  {
+   "path": "_3dprint/stl/E_pillar.stl",
+   "bytes": 1846184,
+   "git_blob_sha": "8f766d8bd443291a06952d43dc25cbd7de5175fd",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "22cee1004fe1ba6758a9ae94a257256bb61f28cd5cf7c9ac43030f0d15d21c60"
+  },
+  {
+   "path": "_3dprint/stl/F_pillar.stl",
+   "bytes": 2626584,
+   "git_blob_sha": "212429a498496c6a7af9a6ae1debf52aab2d39ee",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "3209f00d9b37573c5c199371f81faeb26b56951950bfbdf7ed818505163fab27"
+  },
+  {
+   "path": "_3dprint/stl/G_pillar.stl",
+   "bytes": 2203184,
+   "git_blob_sha": "027ea734b96eaedb4ea82339699ed9131ac89180",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "28cd2def220de885e7537367e2a20b6eb34430b128455a8507afa88a4b63fcfb"
+  },
+  {
+   "path": "_3dprint/stl/H_nema_cover.stl",
+   "bytes": 1895184,
+   "git_blob_sha": "1dbec1af55801eeb8d5355369f033346e0812c65",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f1b99a87f875daa182d99a2812364a418914b6248f34019452259cfe85423371"
+  },
+  {
+   "path": "_3dprint/stl/I_nema_wheel_hub.stl",
+   "bytes": 3679384,
+   "git_blob_sha": "ae59b4007ca59b46c7b21bed73608b60ad0a6265",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "19a9b916568309871ae69dc0cf8e49bea6bfa9fc7c23d7a41af5a33c196ac0c5"
+  },
+  {
+   "path": "_3dprint/stl/J_top.stl",
+   "bytes": 14266484,
+   "git_blob_sha": "80243a51c9923096dc6820f668b0e2103236b499",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a28ecf7894160b14756b5900455ad57d7a651661ffe0cbdd723834ca60ac8136"
+  },
+  {
+   "path": "_3dprint/stl/K_top_screenholder.stl",
+   "bytes": 1151384,
+   "git_blob_sha": "33fa7e5503aa279a58c02720984bdf345467690c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "d47b552a517173f791e19581f79b0a60dece0e7050e4985e1dffa9eca025d879"
+  },
+  {
+   "path": "_3dprint/stl/L_top_tapefeeder.stl",
+   "bytes": 4643084,
+   "git_blob_sha": "e46fae70d3a2d94d835047f9d88957e81b67faec",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "5a6ffeeacb169bab14a5d505eec0cf207e5f6c77bd07e29ae01c33ab423ca057"
+  },
+  {
+   "path": "_3dprint/stl/M_top_wheel_cover.stl",
+   "bytes": 1075884,
+   "git_blob_sha": "d9ba40a465ba5eb1820a73527e99b8a226ff3306",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b2661fff730b5b9ae6fc9c3381a3b75f579f3e16191056a5ef04056cf45a798f"
+  },
+  {
+   "path": "_3dprint/stl/N_wheel_coupling_bottom.stl",
+   "bytes": 620584,
+   "git_blob_sha": "aa714c17e2b475943f3dc468d8ecf31d6aedef3a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0d4ab3d18a709cd373a996da1df676aa6d15f264fc7d818e1f224d0fa963ce77"
+  },
+  {
+   "path": "_3dprint/stl/O_wheel_coupling_top.stl",
+   "bytes": 1048384,
+   "git_blob_sha": "166bf30f61794b6ee3fc554b03ee284f3f8e5e7e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b6224c3de7989cc3c50ef30f1a59bf764e895bbd0d5527e753bcbaed10562c1b"
+  },
+  {
+   "path": "_3dprint/stl/P_press.stl",
+   "bytes": 1212184,
+   "git_blob_sha": "7d6b8d4ecbad3de9e4b2169fe283425f4f6bd372",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "870fbcd1fa205e338debb1cf4f2e0a23cc171855daf0ed7ca00cf16e4d96a42f"
+  },
+  {
+   "path": "_3dprint/stl/P_press_1mmleft.stl",
+   "bytes": 1142084,
+   "git_blob_sha": "b37e7169b9cfb778671a0cfb7254982c21ad2f81",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "c2c72df463f387aa3bf52f9c4505b297904e330faa850eeaa843722737df0399"
+  },
+  {
+   "path": "_electronic/boot.kicad_sch",
+   "bytes": 48048,
+   "git_blob_sha": "67b74079ff6fc7350eba4753b6d4f4f677ee3a62",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "534d8f6bb39bb57c414bac36a199e8f6812837b79149a548cd4fcd7d96d8a864"
+  },
+  {
+   "path": "_electronic/charstepper.kicad_sch",
+   "bytes": 44178,
+   "git_blob_sha": "7dd519da4307ca0b94f48654e06c306533ede171",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e933b3d68e5d1ee61f604c206f4fcc4658c148b3691b75cc17da3543735106c5"
+  },
+  {
+   "path": "_electronic/connectors.kicad_sch",
+   "bytes": 30347,
+   "git_blob_sha": "9ae7e1475e626f420959d8108be76d89823755f1",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "dc4f88bb273fab259124b1a202c031475e6eb084e9760c132c634969610ed8a1"
+  },
+  {
+   "path": "_electronic/drafts.kicad_sch",
+   "bytes": 108266,
+   "git_blob_sha": "6d8407b7384c1ea55b641357cefd160158b14b59",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f32f0b9e744379fbe5ef18f6b84411c0dd7fbc2cfc12a9ffc67ac128e8f37201"
+  },
+  {
+   "path": "_electronic/e-tkt.kicad_pcb",
+   "bytes": 3281673,
+   "git_blob_sha": "986d26d8b452afa3e1248d3f29e2428c13b499b8",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "7bc3c0692475702db58940527e9a63bc8b8e5f54c43630cf4a71a303d8f31483"
+  },
+  {
+   "path": "_electronic/e-tkt.kicad_prl",
+   "bytes": 1150,
+   "git_blob_sha": "01cd6a8874f18dcc09ee59f021192b6db9014c7a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "d11edb93570b43d775bb52e581ff968bf023fdc99eaa4a6f690c80abc7c3f43d"
+  },
+  {
+   "path": "_electronic/e-tkt.kicad_pro",
+   "bytes": 11921,
+   "git_blob_sha": "7cba9eb723f9181be9a4056098d56f479a0b6f62",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "640f9ccf45d1846ba0f0b7b97afb5fa616065a2958f0f2a9afdddb1f0e445407"
+  },
+  {
+   "path": "_electronic/e-tkt.kicad_sch",
+   "bytes": 115905,
+   "git_blob_sha": "ba608bad8a59c5fec269bec7ead7ccd6b7a4afe1",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0a8b64c72c00d52d1a09a3b7075ff5de040015951f4c82ec2488605bd230062d"
+  },
+  {
+   "path": "_electronic/e-tkt.kicad_sch-bak",
+   "bytes": 492643,
+   "git_blob_sha": "fdb93b1ccdcf83a5d73d7203d6491beba720d065",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2fd16b4eddff89c5f81270bb05e8bb5c0a0187dbd50de89ba3e12721c506d64e"
+  },
+  {
+   "path": "_electronic/export/3d/e-tkt.step",
+   "bytes": 23162922,
+   "git_blob_sha": "15c981ba8b7b686e25d9f0701313a859e9854357",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "dc44d221cee8543b72146e9af7cb3b4b04e8275c130b115cf98c7f4e42a46463"
+  },
+  {
+   "path": "_electronic/export/3d/e-tkt.wrl",
+   "bytes": 18470357,
+   "git_blob_sha": "949e2db8453642a31232a448fc923872e20d03f5",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ef7a24b52a4c8f83fc58d5c869d5bcdb293dbb94be3258103b05078cd6c87483"
+  },
+  {
+   "path": "_electronic/export/etkt_schematic.pdf",
+   "bytes": 159762,
+   "git_blob_sha": "e3ccfcf7866e4222d508b63d9f131b380cae63fb",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ed23f206bc3cfe6896579fea90827db7a8dced00cf53087438537e38b38e1a79"
+  },
+  {
+   "path": "_electronic/export/gerber/gerber.zip",
+   "bytes": 492240,
+   "git_blob_sha": "4332d47816ff983770583381c32f0eda04946f3b",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0659b89d6cdb6bbd5bc6d9ccbb0cb42338b7af505efb16505a9caf34ff51bab5"
+  },
+  {
+   "path": "_electronic/extflashing.kicad_sch",
+   "bytes": 7715,
+   "git_blob_sha": "7ea206ef7b8671f02f09a80bc61347aa7968afb2",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "87fa7bb617daadf04871c2629e915ad9b024e78f46c96121e1bc42a5f0097854"
+  },
+  {
+   "path": "_electronic/feedstepper.kicad_sch",
+   "bytes": 44438,
+   "git_blob_sha": "b05342b8d2839b60ab67895e08389b55d9ea9299",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a26b0242560def74b79246093838a176c2217f87c7bb5841a3d6e261066eac0c"
+  },
+  {
+   "path": "_electronic/levelshift.kicad_sch",
+   "bytes": 32200,
+   "git_blob_sha": "9ba51c5b6099cd67a5672fd29f17fdb245f65544",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "31fc9d7f62e87471d2dcd0e9517ceae062b2c86b89d9a92280408be92837fbfb"
+  },
+  {
+   "path": "_electronic/mcu.kicad_sch",
+   "bytes": 32334,
+   "git_blob_sha": "9a8487f6183177009a4f4e1900ce08cec25c2c2c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a8c4da0038582e60bc2600929d0658c7a81d91dd0ade36c3a98e4af595f13767"
+  },
+  {
+   "path": "_electronic/power12v.kicad_sch",
+   "bytes": 17618,
+   "git_blob_sha": "724cfb6aadb8a57380b89cff52f09d162b576f35",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "af134b8ef17611bf36e44fcdefa0aeae2c740043435d166847f12fdb6353daa7"
+  },
+  {
+   "path": "_electronic/power3v3.kicad_sch",
+   "bytes": 16288,
+   "git_blob_sha": "ff722ab18da95f6da446ea534669d82f5eeb13c3",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "fdca968ddd9068cf83d7f4203f704b568a04e47c2e55bbd4a5f79a4745b4e9bf"
+  },
+  {
+   "path": "_electronic/power6v.kicad_sch",
+   "bytes": 54312,
+   "git_blob_sha": "9fa1c7ecbf4543fe3bb266975feac481b52a92f4",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "1dc61387e52095807b2132602f42b31a77117d8538676319cb475778a086585d"
+  },
+  {
+   "path": "_electronic/power6v.kicad_sch-bak",
+   "bytes": 53489,
+   "git_blob_sha": "75f0845214859bdc9625c64a4bdbb671c247e25f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "bfc1d009a7463c88fe1f323c0a97d8400fb28f22bafc46bc8fa31a891564ac23"
+  },
+  {
+   "path": "_electronic/serial.kicad_sch",
+   "bytes": 43472,
+   "git_blob_sha": "9ed2bcc3b73a0f77e7aecda65f44ec2afb4d1f7b",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0745d0b7a9440be91cf1990406529584203dc42532c1aa9f363de2fd2374c9ee"
+  },
+  {
+   "path": "_electronic/usb.kicad_sch",
+   "bytes": 39766,
+   "git_blob_sha": "45357b5ea99d5602deac9459fd97f9feede7d196",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "d4971aa0dc76e48dab6fce47d4444298b5734bcc042cd96fbd48aa2c7b3e0d30"
+  },
+  {
+   "path": "_electronic/wifireset.kicad_sch",
+   "bytes": 20002,
+   "git_blob_sha": "0d52be957eb724b82a020baf2f855a22a32975f9",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "3d42f49d26de126afd4c252dc046175d20ccc3cb2025301adc40978a3b2a6a51"
+  },
+  {
+   "path": "_visual/icon192.png",
+   "bytes": 4396,
+   "git_blob_sha": "528f934fe6304738de3f5359b3e4250a7b451601",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "4b180401fc459ef6ad0a30ae65ee033cf3ffbbe2f1a1c97f8d15a289fa221844"
+  },
+  {
+   "path": "_visual/icon512.png",
+   "bytes": 5164,
+   "git_blob_sha": "efd4b8d2bc7708fcba5e3d1c711eb421e91d0b3f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e1c536b1f7dcd9730cff98490b5a9b7dfd9c16fb1b2e76a4f0ee4da68ac6a87b"
+  },
+  {
+   "path": "_visual/logo.bmp",
+   "bytes": 12344,
+   "git_blob_sha": "f528a11a4368be9a8a9d1f91ca3e26c7f13a2037",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e6e90192d9f22d257e9b8624b43844420a659fc6b1d59407f1a9204a3619032b"
+  },
+  {
+   "path": "_visual/logo.png",
+   "bytes": 6538,
+   "git_blob_sha": "ba59577ac14269eeb6f8a37eeb94792baaa27510",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2e78d9fd28ad1298f7bee93a458c633d7564a96e481014236b7909f2e0b0b676"
+  },
+  {
+   "path": "_visual/logotilt.png",
+   "bytes": 12505,
+   "git_blob_sha": "829a8bec871c7ff440f09dbe38652a624511befc",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b754185e5cbddde60efd37624c139344ae09dede68c752ec29d6e88792cc0e61"
+  },
+  {
+   "path": "data/favicon.ico",
+   "bytes": 15406,
+   "git_blob_sha": "0cce03e1dd6c22bdca4a908e9d1429ccc1335d3d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "8ef556e5313fd94024e0d49278db3784fa92c249c3a74eaa9cc46a9b53a01596"
+  },
+  {
+   "path": "data/icon.png",
+   "bytes": 6773,
+   "git_blob_sha": "9a41eb8da38063eff53db2b4bf71a5fc443c5442",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a96de20d4395d5a0277437d101ef46e3f93876574e212f154d4cd9549d50a88b"
+  },
+  {
+   "path": "data/index.html",
+   "bytes": 17596,
+   "git_blob_sha": "da5771f0e0b2b0cdf3092e9185c32aba609617c4",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a39c783891307c3b8d72f97adf708463923248f38551c8be6500c74c3d7b3903"
+  },
+  {
+   "path": "data/iso.png",
+   "bytes": 39700,
+   "git_blob_sha": "1122b65f3a6bcc0d74afb63344592c0ea9d62988",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a1bfacac4db1b73800ce6ad724fa64071e1f4c72f6673268f833b2acf1b1c7ed"
+  },
+  {
+   "path": "data/manifest.json",
+   "bytes": 217,
+   "git_blob_sha": "5cd7ce7963dc1b5ff3313eb30198bb9ebaabace0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "1dc42204ed529b0a628bcb03da283926ed68b20a5cbb79112071c7e66eb963cd"
+  },
+  {
+   "path": "data/script.js",
+   "bytes": 20838,
+   "git_blob_sha": "8cea2ff8f7ae189b1f6878a94a8898179e5132c3",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "9e2ddd5d7cf034bdfdb0b2f7657f215a584a3c3c6f15fae3fed4233a2772fbc4"
+  },
+  {
+   "path": "data/splash.png",
+   "bytes": 6616,
+   "git_blob_sha": "a521cd0149584113860b78e4c5ddf8c05f6df006",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e1e71620377991e8156fc197f03ec4c7e7d660b01839189c962720b143b2c353"
+  },
+  {
+   "path": "data/style.css",
+   "bytes": 17048,
+   "git_blob_sha": "0831a25d2fcd656a60dbcb82ae7648c2a080b8a7",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "faf31db68f06a74eee85e816b7bbd9201a588f7ee0e1bbf95ba65f69cb2f6493"
+  },
+  {
+   "path": "docs/LICENSE",
+   "bytes": 20139,
+   "git_blob_sha": "795087c264ddd3059b2ab3945a74d11930e7c10e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2003829cf643d61b00a76088dd31bb11b8029546f24c56b39fd492adb9281483"
+  },
+  {
+   "path": "docs/_config.yml",
+   "bytes": 2696,
+   "git_blob_sha": "5eb6064eab49c4a6700a4381829167de1981fe7f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0ea2bdd5ffc8979a54bf47b5936d4e6de0be7b7df12f849be0364af8604d7963"
+  },
+  {
+   "path": "docs/_includes/head_custom.html",
+   "bytes": 71,
+   "git_blob_sha": "17b36b3c1255f00980e82875b81d2181c1c081d0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f462226e2724b05b552048c37e41db3e1212db1a62661014d8fb140a4239b2e1"
+  },
+  {
+   "path": "docs/_includes/mermaid_config.js",
+   "bytes": 20,
+   "git_blob_sha": "d2afad39e726b66a49bb8362715621f15b1a65c2",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "5689481ef6140b2d4e10d8e87b6d81709fe35a3db94c0c03160d6f8b2998b72c"
+  },
+  {
+   "path": "docs/_sass/color_schemes/etkt-dark.scss",
+   "bytes": 937,
+   "git_blob_sha": "9eba948e56092f0a9f8f381f783131c1ff79356f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a9bd52a46f65a1ea9c897d41eca85225c5207fd466b34bd7838daa683f91d556"
+  },
+  {
+   "path": "docs/about.md",
+   "bytes": 6253,
+   "git_blob_sha": "72590ce772f415e451670c8354e08286ef52c288",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "7e1febd1674cc46da25d99783c9143423240eca5e6a8f71ade7311a17a6da4ac"
+  },
+  {
+   "path": "docs/assets/favicon.ico",
+   "bytes": 15406,
+   "git_blob_sha": "0cce03e1dd6c22bdca4a908e9d1429ccc1335d3d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "8ef556e5313fd94024e0d49278db3784fa92c249c3a74eaa9cc46a9b53a01596"
+  },
+  {
+   "path": "docs/assets/icon.png",
+   "bytes": 6773,
+   "git_blob_sha": "9a41eb8da38063eff53db2b4bf71a5fc443c5442",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a96de20d4395d5a0277437d101ef46e3f93876574e212f154d4cd9549d50a88b"
+  },
+  {
+   "path": "docs/assets/logo.png",
+   "bytes": 16949,
+   "git_blob_sha": "1dacbcd0c9024223da6149140a16f0bd1840ce61",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "1c406374e512a650f959dc43ce2e16066f0344a212f59ff046554ac946359e88"
+  },
+  {
+   "path": "docs/credits/credits.md",
+   "bytes": 118,
+   "git_blob_sha": "0cad0809dac0e4aca12fd4dd4847d6d7436ea2cd",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "66895f8aef68c0d588412a0bcb341ca2332fad62789a87ea4f4a088498862c25"
+  },
+  {
+   "path": "docs/credits/libraries.md",
+   "bytes": 877,
+   "git_blob_sha": "f0437bdaa7827badbbdeb7f46e3ac244abc85dc3",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "8c4f3a4c39d6bfe287fa3c5e8e7a02d846e88f495f0ba268cc809cb2fadcb15f"
+  },
+  {
+   "path": "docs/credits/thanks.md",
+   "bytes": 1304,
+   "git_blob_sha": "585d44cac54f242f8c4e4490d9170bee11bb2899",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "27f9bcca00fddd673da5e26f655d17e4ae6bcfba18e626d645aa3469be2f1d5e"
+  },
+  {
+   "path": "docs/diy/3dprint.md",
+   "bytes": 1636,
+   "git_blob_sha": "980a049c33a0cc2abd88bf85bb0aba4096c4c37e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "95e570e376b45aace778af655cb47dbe9f1e505c6c5e80fd4667482b0dba3d78"
+  },
+  {
+   "path": "docs/diy/assembly/00_harnesses.md",
+   "bytes": 2421,
+   "git_blob_sha": "78efef0dd4f896e70313157944963c5b635f3224",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a9daa20b1a0b1551c89f718d79313ecd3ac5db4733751ba5d09d465edf700029"
+  },
+  {
+   "path": "docs/diy/assembly/01_nema.md",
+   "bytes": 3115,
+   "git_blob_sha": "d204113aded67df0839b9555ffdd2f2c80b6f4e3",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "031c06f466c11df5aee3d55b94726bb990feda675eaf97e391c6fdc1bd647401"
+  },
+  {
+   "path": "docs/diy/assembly/02_pcb.md",
+   "bytes": 2251,
+   "git_blob_sha": "b602608443fd9c5d91d5d5f585cfc43c04da5a1e",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f11a6e57eaf00a1e67c150f4e58e0e5a7e07fd4dc876f61b8fe830c664c06a02"
+  },
+  {
+   "path": "docs/diy/assembly/03_chassis.md",
+   "bytes": 1623,
+   "git_blob_sha": "4e51ebe2d4f1fe8fda570d55a4b3259c16a9dffb",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a803ba1e94c81216fac04cfc8ce81ba7bbe286d8541706729ec46e62b62c8f12"
+  },
+  {
+   "path": "docs/diy/assembly/04_servo.md",
+   "bytes": 4526,
+   "git_blob_sha": "df8e1821ec9704fd9b3b9715108ec211567646ab",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "14f520fb2f3d1f274ee5405ef20e00f784be9dd2a8e465bd5b3d4928cabe4762"
+  },
+  {
+   "path": "docs/diy/assembly/05_feed.md",
+   "bytes": 2725,
+   "git_blob_sha": "7430bf0e3323e09ff81b379e0b33003dc07a7868",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "556d06e9635bba9ccf4a5f9b20459ffc8b45219edc4bee4ca2202edb6f1a139b"
+  },
+  {
+   "path": "docs/diy/assembly/06_daisywheel.md",
+   "bytes": 2450,
+   "git_blob_sha": "efde184795a0434edacbd4d00881c39d66ca61f1",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "4d04aa5c6c866cdc11f946295dba06ee329ad97b620e332df6df8a0b33f1b1e7"
+  },
+  {
+   "path": "docs/diy/assembly/07_top.md",
+   "bytes": 4217,
+   "git_blob_sha": "2dc8c2f786465fcdb8c71f7757b4ba9df83e8be2",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "429a685d3050fc345e8efb8883c2eabf468d8c84fb6b42708b2637a642fdc66d"
+  },
+  {
+   "path": "docs/diy/assembly/08_feeder.md",
+   "bytes": 2217,
+   "git_blob_sha": "399c8a42a514a8c15128dcbee2261c8fbf076422",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "550593aa798743cc395b43fc3bfb5e201790df10e2bd7d2a11399343759550df"
+  },
+  {
+   "path": "docs/diy/assembly/09_finish.md",
+   "bytes": 2402,
+   "git_blob_sha": "32cd1a0181e7a71897a74b43854ec554ed71d53a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "15ff743ed34a19febf9df9f9db28047615ef97ff155e571395c68d6b530de819"
+  },
+  {
+   "path": "docs/diy/assembly/assembly.md",
+   "bytes": 467,
+   "git_blob_sha": "5917388e1d4a399fbfb2e4f9a1886c1b62c2a000",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "506e4ee88c6cabc97b7df94b30a021019b94af34593e606b68ed11aeb22d83fd"
+  },
+  {
+   "path": "docs/diy/bom.md",
+   "bytes": 9110,
+   "git_blob_sha": "602fde614e6f591f522692ad653b7fc2472f6f13",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b6762736c17ed8e720bf2efa6b7f853004f4fa0cbe7069df1a1118c7eda891b1"
+  },
+  {
+   "path": "docs/diy/calibration.md",
+   "bytes": 3758,
+   "git_blob_sha": "550ba6d8482dc6a2c7db4dc8382df6c109f7fcb9",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2ba6df2ee9dfd066de300cd64d49e5d7144fb1f3b7f677af04055c7d298cf7e9"
+  },
+  {
+   "path": "docs/diy/connection.md",
+   "bytes": 1707,
+   "git_blob_sha": "2d72486b10f27758bd132594a0092d109c7f4f62",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ca24e7741043b8af0c53181544ed4dae1f292882c227e86fb8b4890d050b35d7"
+  },
+  {
+   "path": "docs/diy/diy.md",
+   "bytes": 263,
+   "git_blob_sha": "368cb16a70a40257143b67d43266d934b7c51863",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2ff14787ab6e9b0b7fc087ff223909edc6dc156dc3127548bfcc2101d2cb5db9"
+  },
+  {
+   "path": "docs/diy/electronics.md",
+   "bytes": 4216,
+   "git_blob_sha": "afdc58336b573cd3331c3ac4d3c78de5c3815a45",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "d1e66de6c48616eac1fe65248b5fea0c64b7fa1740456415e8f352e72b44c252"
+  },
+  {
+   "path": "docs/diy/firmware.md",
+   "bytes": 1021,
+   "git_blob_sha": "7baa3d8d59749f8c65b54e4962c5a91bb0c49c35",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0598ebdcd2cc8e3a742a79e50fdf216f59624875a1bdc4af4a0326751eb1aa18"
+  },
+  {
+   "path": "docs/diy/overview.md",
+   "bytes": 2010,
+   "git_blob_sha": "f95e5cd0f288d4346787b020afdafd2e17967121",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "8b2c4ab03a29fa87292a07c3cb67efa81c458fb4a3ed50100ffd81c0843648d6"
+  },
+  {
+   "path": "docs/diy/reel.md",
+   "bytes": 1472,
+   "git_blob_sha": "4ffd199dd35fc983988a7ea8b00b7de0cb87de03",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b12e59114dad15779abe1a72adc7dd9b4e159ffe05ad6bccd8a7db921c88e8f0"
+  },
+  {
+   "path": "docs/features.md",
+   "bytes": 1432,
+   "git_blob_sha": "a1af1e193063322a49519c3ceb80c7ca5af2ba22",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "7b736ea5d82e1fd13c3505ea7f85215e44b52335a6026ed8db63207d816ae29e"
+  },
+  {
+   "path": "docs/gallery.md",
+   "bytes": 3034,
+   "git_blob_sha": "6cefa33d380bd43f365aafa8459a47fd8ef15b51",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "47defe89ab9f2acd6525b2d537026136d6af368cc52923ddc97c94161143874a"
+  },
+  {
+   "path": "docs/how.md",
+   "bytes": 2177,
+   "git_blob_sha": "aaa79eaca378365d22ac14a6422bc365a7bb0084",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "b30b83a032b046dcfb7bdbd097f7a0ea4e45abf06becb36da1355d295ba76b5d"
+  },
+  {
+   "path": "docs/index.md",
+   "bytes": 998,
+   "git_blob_sha": "078815e41ca634d34de8c6b2685d37bd87000268",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "955446edef74357dc8d027f25fa65ec0b340e985e7383cc7fe902c00041feb2b"
+  },
+  {
+   "path": "docs/iterations/2021-03-a.md",
+   "bytes": 895,
+   "git_blob_sha": "7c40f75e6ad5098f702433b2a2aaff19982cadc8",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "db0ed53de3ecc12e05d9d0bb4ed1b9202d47eb925f3b40ea3bdb2c09c2d7dad2"
+  },
+  {
+   "path": "docs/iterations/2021-03-b.md",
+   "bytes": 462,
+   "git_blob_sha": "5be53ecc57aef9401fe107118d657a0879bbfa3a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ca6d0ca904f38b32de9fac2d5f9048ed92ad05910fce6610fcb7609b0e5ea13d"
+  },
+  {
+   "path": "docs/iterations/2021-06-a.md",
+   "bytes": 1465,
+   "git_blob_sha": "9ecc6dccd57b6feabbec8979400a5edfa93b59d0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "42f638824702379e2a191ed2aba5d0489ac3a2d70969970f16caa4e3d8656b95"
+  },
+  {
+   "path": "docs/iterations/2021-10-a.md",
+   "bytes": 1487,
+   "git_blob_sha": "9e258c214543ea199eabf2b594be88f6458293bd",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "557a2f962e787436d118c180638b16c99a162cfefe88bba39357cfb40b794d44"
+  },
+  {
+   "path": "docs/iterations/2022-05-a.md",
+   "bytes": 635,
+   "git_blob_sha": "3396740283467f6d7c91a6aa2a06c8dbe4c5d96a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "26e8144ff8319c3b395c4e603dde0d24ae6b2fd6ab6a80bceb9566c8a5835151"
+  },
+  {
+   "path": "docs/iterations/2022-07-a.md",
+   "bytes": 3042,
+   "git_blob_sha": "891825ec221dbc6bd83768e7498fbf8dbcbf388a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "6f5ef96c46f10d22d19fefcb54f6e9825efb817f91adff2366f85d7fbc474a4a"
+  },
+  {
+   "path": "docs/iterations/2022-07-b.md",
+   "bytes": 2175,
+   "git_blob_sha": "1c8637da9fc0ebff011897d2f1cfe793a99087ec",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a10db971759830d94f864824004d83ca20c6e7828be3d044ce52917d3156ccfc"
+  },
+  {
+   "path": "docs/iterations/2022-09-a.md",
+   "bytes": 1683,
+   "git_blob_sha": "3cf2f00e5c87082ad759011d7a202fe967b3a2d0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f809114170322d2e71d6f8801701abb78342c50763a0b53be2623cfad309a258"
+  },
+  {
+   "path": "docs/iterations/2022-09-b.md",
+   "bytes": 2780,
+   "git_blob_sha": "0e66ba3f24dc1e76de9023011cd80c6b55b2c492",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "4f980a724dc07aba7440613b07187b62b845dbe43c2d05e60dbf74f6ce6fd1a2"
+  },
+  {
+   "path": "docs/iterations/2022-10-a.md",
+   "bytes": 1351,
+   "git_blob_sha": "05acfadc162b2250bbf8a110fabf2136bba072af",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "afc09a9b03d471a805e5ec37f070d0a398e2ecde621c947b0a30f5028ff637a8"
+  },
+  {
+   "path": "docs/iterations/2022-10-b.md",
+   "bytes": 5002,
+   "git_blob_sha": "a67d42e0da901fad453a1a5741ffd5b1b966de88",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "5032fe8f5b86eaa7aafd8ea48ad8c84cfa1eacc89611c5f37eda4d501fba4e92"
+  },
+  {
+   "path": "docs/iterations/2022-10-c.md",
+   "bytes": 4950,
+   "git_blob_sha": "cf3698ecdff346e081c5162c1305f7e4c92eeef4",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ab26d7dba807d85077f423c0954bc40ab6c0763aed8c2661b8ed325acfe789b5"
+  },
+  {
+   "path": "docs/iterations/iterations.md",
+   "bytes": 123,
+   "git_blob_sha": "984c6caca28f3bbe6d35b01a4ecd0f59a15a01a4",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2fd3d7d0e3390e3b0af9be604658219290dc8b679e1977d6e3daa77d81587546"
+  },
+  {
+   "path": "docs/iterations/roadmap.md",
+   "bytes": 433,
+   "git_blob_sha": "6af63239ada68ccdb3f6e4aa5a299666183f9329",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "68105b0acee6e78535072610861d50bd9ba7a390932c8732c38bd75bdfa7798d"
+  },
+  {
+   "path": "docs/license.md",
+   "bytes": 803,
+   "git_blob_sha": "3d5c2bd52178f39120825a8a205209ad000c4d15",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "d99e754fa2ee300b407e385a49b88f1cbc6062ee5daf5e6a0615c8629dbd58dd"
+  },
+  {
+   "path": "docs/media.md",
+   "bytes": 1004,
+   "git_blob_sha": "490c04c004a41ed4477db0a6a56a99dd3314a12a",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "ef73c29b60db6e86ab65892b1d92919e76b46b020390ea0d0eb112702dbc1685"
+  },
+  {
+   "path": "docs/news.md",
+   "bytes": 1843,
+   "git_blob_sha": "a61404565d3b315a3cf15be5a5cc34e6698b366c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "18b570201cd3c12d58ec625c39c2e1b0ffee90519e9281ca5575feea5749eece"
+  },
+  {
+   "path": "platformio.ini",
+   "bytes": 954,
+   "git_blob_sha": "04f8f2c413b805ee84b18b45289a9d869d8b03f5",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2aad9c77a3f46a6830fd3103dea35985d7c750bc0677ea1e78959c1d8ed51fb8"
+  },
+  {
+   "path": "src/Characters.cpp",
+   "bytes": 1074,
+   "git_blob_sha": "5a80b85fe9dcb48bfc40f0fdd7dcad9fcdab0ccd",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f6f050c0fe8a477218aed81527d2f6c6dd902e1142330a26cf3e48d177544d68"
+  },
+  {
+   "path": "src/Characters.h",
+   "bytes": 2244,
+   "git_blob_sha": "ee4075f43960ff4e896dc01c5f0503fed8a2bb09",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "7e6c1bb000f9628e805813c8044838b6f0a0a007000687f1fb6c4ac3f45a81ed"
+  },
+  {
+   "path": "src/Configuration.h",
+   "bytes": 3992,
+   "git_blob_sha": "cdb2c7feef744a5b7fc4c3fe431549ebc4cc63bc",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "6d88e77a66d55a1411331d74b5fe5bc1c0625f1c95e1eb2ef0513ec998161c5f"
+  },
+  {
+   "path": "src/DaisyWheel.cpp",
+   "bytes": 4469,
+   "git_blob_sha": "77b77e6e4e34be0f9f5414203bf48c960d5f51bc",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "41157aa29ef9c863949262ba5420c6939554e330cecc61a6ac9c286abfe5c6a8"
+  },
+  {
+   "path": "src/DaisyWheel.h",
+   "bytes": 1171,
+   "git_blob_sha": "a2c4747de44d0a078b4f54819c10797c7c386fe6",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "fc32548b0e8aa3534090938e5548df6225c629f413289e81b265805dc10e0bd0"
+  },
+  {
+   "path": "src/Display.cpp",
+   "bytes": 11177,
+   "git_blob_sha": "6782f3ac7f9c5e227d7732c95b4a75669fa7ad9c",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "5ad09636f1e699b8bedc3c15bb125c588ab76746cf3c4a9cf5f0e39aa77487b4"
+  },
+  {
+   "path": "src/Display.h",
+   "bytes": 2665,
+   "git_blob_sha": "0b316becceaa6afd254e491b1a93e236940612f0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "66f25a188a414fc13d075bd37ede1366d5212d26252bc5175cd33db480e8314e"
+  },
+  {
+   "path": "src/ETKT.cpp",
+   "bytes": 9843,
+   "git_blob_sha": "bc3a0b67e846a5eb5cfcbbe0969aebe6bc4bbcdf",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "789c051277ddcf4addcbe5eb9aab7d2f5360e88c08b9bbd76ec193667e9793ee"
+  },
+  {
+   "path": "src/ETKT.h",
+   "bytes": 4277,
+   "git_blob_sha": "e969eb203b83689e1ef829b1da68e06c797d45e9",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "fba71ab3a04a091665d685df78dff241d7152ace211ba043d9ca6ed9f58327ad"
+  },
+  {
+   "path": "src/Feeder.cpp",
+   "bytes": 1146,
+   "git_blob_sha": "4ece16ca7d79ebeab89e5a569023f49698e9cb13",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2005155a1235808e7f7179dea9e44f707069d62ec6f25758b277ee69e65d5e8b"
+  },
+  {
+   "path": "src/Feeder.h",
+   "bytes": 459,
+   "git_blob_sha": "cb6f4f1db5ca56793205b2bc13c6797f0dacb9d1",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f9cdf29e3394a9486a9a38b5e3e3ba7ac4ffcea0f0d2f8bf1173d283d10c999c"
+  },
+  {
+   "path": "src/HallSwitch.cpp",
+   "bytes": 393,
+   "git_blob_sha": "1b9ea29df6113d874cff9085a33b50c577e0e9b1",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "3fea05704a6da3467a4b83007f6f1973b44de05f1d3b72ca32b6df069a702b42"
+  },
+  {
+   "path": "src/HallSwitch.h",
+   "bytes": 410,
+   "git_blob_sha": "ca987805e4e2d8fa14f016de35b4dacfc3610f78",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "51aac4fccd93a8ca68ac52c839fe8f6337bf67cd4a20fb67e383c6dd97ca3992"
+  },
+  {
+   "path": "src/LabelMaker.cpp",
+   "bytes": 2779,
+   "git_blob_sha": "9f3542fec034bfe251ddb0ba454b386a580665b3",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "9e12109b88ece84e4af7849180757699d7a3be38c6917d87e784af0a5a1d4048"
+  },
+  {
+   "path": "src/Light.cpp",
+   "bytes": 378,
+   "git_blob_sha": "41c911eba2cd808e537e9becd339e29689e1c475",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "136ce7d2bc7b72c9be90d001de0eb50ebd18a3459c1321527a6281fbd1c21f0b"
+  },
+  {
+   "path": "src/Light.h",
+   "bytes": 273,
+   "git_blob_sha": "4a64238a973b2214b4866418f13ac4efb95bda43",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "2ad2965013d2ba2a6812ea1442fd91625d8d65f0fc60865e9997a6eb364e52f5"
+  },
+  {
+   "path": "src/Logger.cpp",
+   "bytes": 750,
+   "git_blob_sha": "98c0f35b18d1ff906fb6f1b9dcc7ec1bf5b468be",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "0f7729b36561a4b23bf5dbb08754e34f52d9c0a0badb9abb904c65fb07eff684"
+  },
+  {
+   "path": "src/Logger.h",
+   "bytes": 214,
+   "git_blob_sha": "2cf98baeee088a4ad7fc46a3c640e234be2fb0f0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "1d8a84f63f8ebf724e85d36f534cc4a9553de38ea7b00a833801d8b43dfa4521"
+  },
+  {
+   "path": "src/Network.cpp",
+   "bytes": 12094,
+   "git_blob_sha": "040c8338fa67c5c950ae6b4574e5e4936786ec6d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "11e9af35435587953e5d60250227c80e8198180b3e4be6bb26ca48db9f981c99"
+  },
+  {
+   "path": "src/Network.h",
+   "bytes": 2289,
+   "git_blob_sha": "5ef67a92e29c5a5e4f8a0139154cc8dfd9ff4137",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "d1c2c42c5236eeb24353b3c7ba869596757f886ec874558ab3183d02332288c1"
+  },
+  {
+   "path": "src/Press.cpp",
+   "bytes": 1440,
+   "git_blob_sha": "1736c3b926946e84c345968c9c7acd23f1733e1f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "3f06cea7324c9199beba24506d7ee873cd88eac078c9a69fcc6262d685b7a14f"
+  },
+  {
+   "path": "src/Press.h",
+   "bytes": 853,
+   "git_blob_sha": "c2c725b8e3b14fc4868712f2ae6274363e924379",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f204649786e7086579c056c42c5766b69a4c0b4bd4e512ca05feee09a68b00d6"
+  },
+  {
+   "path": "src/Settings.cpp",
+   "bytes": 1570,
+   "git_blob_sha": "0006d00aeb658cc7417354281692740a606a84c0",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "9696ba330105e518d4c31b9d8ff6f9ac06493d70847974757981ebabd6286cc8"
+  },
+  {
+   "path": "src/Settings.h",
+   "bytes": 990,
+   "git_blob_sha": "b9e8fa5eb3d5a932f00bd5b0412ae631d7a24c6d",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "f70b3c1eec5a7fc0fd2e4fd883f7a6ec3db12c0b340f403a6ffed0e42ab390b2"
+  },
+  {
+   "path": "src/Sound.cpp",
+   "bytes": 1775,
+   "git_blob_sha": "792ee52e7580652ede0c1003b7d2d0f8120d133f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "44c126f631338ab9d26f9ed3b03c32cadd679225fdd4ca93473893a5f3460712"
+  },
+  {
+   "path": "src/Sound.h",
+   "bytes": 1125,
+   "git_blob_sha": "07c146625de86133997fb6b75aaefeeb7db800b6",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "72d3d9d340dfefb3264ec2c341fb29e932cd6e483d9e9c5be22e338ea51e5e27"
+  },
+  {
+   "path": "src/Utility.cpp",
+   "bytes": 1063,
+   "git_blob_sha": "71aec4d767abc887f145b214e4ab65456cd3465f",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "56028f6d46d744cd7eab4ee593ced716736bea6655de4261ce491d4599ccd7a9"
+  },
+  {
+   "path": "src/Utility.h",
+   "bytes": 671,
+   "git_blob_sha": "ab43b3506279a1f1ac046a63514e05d882adea52",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "44b5c4a70b703ced6e0b49a491d595df880b999e3e9ab72ce4284620385d8d09"
+  },
+  {
+   "path": "src/etktLogo.h",
+   "bytes": 3430,
+   "git_blob_sha": "3b75ef0e39d7f484a89678ca9e51580a886081c6",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "a99c6044008f97ed74cc474a8def3e9a2b72e55b627f7f968df3fb92cb89bda3"
+  },
+  {
+   "path": "src/ota/upload.py",
+   "bytes": 1708,
+   "git_blob_sha": "49e0b05ad11fa1f8003f307aaa28efeb8fae7124",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "73827eb8b8cfd89446d0d39eef384047ed179a8b1142e339d9e254dd1a5ce621"
+  },
+  {
+   "path": "src/pitches.h",
+   "bytes": 3617,
+   "git_blob_sha": "0282a0a3142ea532a058ab02b12d0387b2e629ac",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "53b1772eee5a4e5b1b366cdfd8be9881656ed0fbf6a04e581cd93884fd98cdcf"
+  },
+  {
+   "path": "src/simulator/__init__.py",
+   "bytes": 26,
+   "git_blob_sha": "95a8661eb245aa677fe47e1f4cf8379c027bf1e6",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "59d57d6afd0d51fb84861044821d7a8812089f4240ff446cd47eac04779969a4"
+  },
+  {
+   "path": "src/simulator/__main__.py",
+   "bytes": 206,
+   "git_blob_sha": "3a8eb4ae38d14620199795911436c6a67901e852",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "e479fce4956e8af2a5106fb6b67cc61ba18edd10609f8a156f93a37f1716e502"
+  },
+  {
+   "path": "src/simulator/server.py",
+   "bytes": 2564,
+   "git_blob_sha": "ed9bae47392b2964cac32f82576e95fe333847ba",
+   "blob_match": true,
+   "lfs_pointer": false,
+   "sha256": "da542abacd8c5f87c87724b8163194ff0d09a4b0ed663d8785131ba5728e9ada"
+  }
+ ],
+ "excluded": [
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_external models_28BYJ-48 - 5V by Pablo Galarce.stp",
+   "git_blob_sha": "56ba9992d74de103bb89a4c8c70f78c42228f5fc",
+   "why": "third-party model (Pablo Galarce), no licence in repo"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_external models_MG-995 by Hasanain Shuja.stp",
+   "git_blob_sha": "c831d600fb6bf5c39db668366b730eaab5f6fb9e",
+   "why": "third-party model (Hasanain Shuja), no licence in repo"
+  },
+  {
+   "path": "_3dprint/source/E-TKT_025-electronic_external models_OLED TFT 0.96 inch 64x128 by Mih Kov.stp",
+   "git_blob_sha": "4ddcd32831ebe18b9e9a14fd363e6357bd57b9e6",
+   "why": "third-party model (Mih Kov), no licence in repo"
+  },
+  {
+   "path": "data/fontWhite.ttf",
+   "git_blob_sha": "ebc8da47043c416dd971767069b4919b72b2ba3f",
+   "why": "font file, no font licence in repo"
+  },
+  {
+   "path": "data/fontwhite.ttf",
+   "git_blob_sha": "ebc8da47043c416dd971767069b4919b72b2ba3f",
+   "why": "font file, no font licence in repo"
+  }
+ ],
+ "all_blob_match": true,
+ "lfs_pointers": []
+}

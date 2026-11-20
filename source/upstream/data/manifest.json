@@ -1,0 +1,13 @@
+{
+  "name": "E-TKT",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#0b111a",
+  "theme_color": "#0b111a",
+  "display": "standalone"
+}
